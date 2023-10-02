@@ -4,7 +4,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="stylesheet" href="./index.css" />
+    <link
+    rel="stylesheet"
+    href="https://unpkg.com/swiper/swiper-bundle.min.css"
+  />
     <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -13,46 +19,988 @@
     />
   </head>
   <body>
-
-  <!-- NavBar -->
-  <nav class="navbar navbar-expand-lg bg-body-tertiary">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#">Navbar</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Software</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Dropdown
+    <!-- NavBar -->
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid">
+        <a class="navbar-brand ms-5" href="#"
+          ><img
+            src="./image/KlimaSenso.png"
+            alt="Bootstrap"
+            width="160"
+            height="24"
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mx-auto mb-2 mb-lg-0 p-3">
+            <li class="nav-item">
+              <a class="nav-link active fw-bold" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fw-bold" href="#">Software</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fw-bold" href="#">Usecases</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle fw-bold"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Products
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <div class="d-flex me-5 gap-4" role="search">
+            <a href="" class="me-3 mt-2 link-color" type="submit">
+              Contact Us
             </a>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">Action</a></li>
-              <li><a class="dropdown-item" href="#">Another action</a></li>
-              <li><hr class="dropdown-divider"></li>
-              <li><a class="dropdown-item" href="#">Something else here</a></li>
-            </ul>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link disabled" aria-disabled="true">Disabled</a>
-          </li>
-        </ul>
-        <form class="d-flex" role="search">
-          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-success" type="submit">Search</button>
-        </form>
+            <button class="explore-pro" type="submit">Explore Products</button>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!--NavBar End -->
+    <!--Carousel -->
+
+    <section>
+      <div
+        id="welcomeCarousel"
+        class="carousel slide carousel-fade"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#welcomeCarousel"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Welcome 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#welcomeCarousel"
+            data-bs-slide-to="1"
+            aria-label="Welcome 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#welcomeCarousel"
+            data-bs-slide-to="2"
+            aria-label="Welcome 3"
+          ></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item welcome-carousel-image1 active">
+            <div class="overlay-box mt-4"></div>
+            <div class="carousel-caption text-end carousel-textBox mt-5">
+              <h1 class="carouel-headre">
+                <span class="en-text text-white">Environmental</span> <br />Monitoring
+                Stations
+              </h1>
+              <p class="text-p">
+                <span class="entext text-white">Real-Time high quality environmental</span>
+                <br />
+                <span class="ms-text text-white">monitoring sensor.</span>
+              </p>
+              <div
+                class="button-box d-flex justify-content-center align-items-center gap-4 mt-5"
+              >
+                <div class="">
+                  <button class="bt-carousel">Explore Products</button>
+                </div>
+                <div class="">
+                  <button class="bt-carousel">Get In Touch</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item welcome-carousel-image2">
+            <div class="overlay-box mt-4"></div>
+            <div class="carousel-caption text-end carousel-textBox mt-5">
+              <h1 class="carouel-headre">
+                <span class="en-text text-white">Environmental</span> <br />Monitoring
+                Stations
+              </h1>
+              <p class="text-p">
+                <span class="entext text-white">Real-Time high quality environmental</span>
+                <br />
+                <span class="ms-text text-white">monitoring sensor.</span>
+              </p>
+              <div
+                class="button-box d-flex justify-content-center align-items-center gap-4 mt-5"
+              >
+                <div class="">
+                  <button class="bt-carousel">Explore Products</button>
+                </div>
+                <div class="">
+                  <button class="bt-carousel">Get In Touch</button>
+                </div>
+              </div>
+            </div>
+          </div> 
+          <div class="carousel-item welcome-carousel-image3">
+            <div class="overlay-box mt-4"></div>
+            <div class="carousel-caption text-end carousel-textBox mt-5">
+              <h1 class="carouel-headre">
+                <span class="en-text text-white">Environmental</span> <br />Monitoring
+                Stations
+              </h1>
+              <p class="text-p">
+                <span class="entext text-white">Real-Time high quality environmental</span>
+                <br />
+                <span class="ms-text text-white">monitoring sensor.</span>
+              </p>
+              <div
+                class="button-box d-flex justify-content-center align-items-center gap-4 mt-5"
+              >
+                <div class="">
+                  <button class="bt-carousel">Explore Products</button>
+                </div>
+                <div class="">
+                  <button class="bt-carousel">Get In Touch</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#welcomeCarousel"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#welcomeCarousel"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </section>
+
+    <!--Carousel End -->
+
+    <!--About Klima Air -->
+    <section class="container mt-5">
+      <div class="row">
+        <div class="col-md-6 mt-5">
+          <div class="text-box">
+            <div class="about-headre">
+              <p class="about-text">
+                About <span class="klimacolor">Klima Air</span>
+              </p>
+            </div>
+            <div class="about-pre">
+              <p class="about-textper">
+                Klima Air is a Continuous Ambient Air Quality Monitoring System
+                (CAAQMS). It is capable of monitoring various environmental
+                parameters related to air quality, noise, odour, weather,
+                radiation. It measures the particulate matter and gaseous
+                concentrations in the ambient air in real-time. Using external
+                probes, it can also monitor other auxiliary parameters like
+                traffic, disaster and weather monitoring.
+              </p>
+              <p class="about-textper">
+                Klima Air is an ideal choice for smart cities as well as urban
+                infrastructure applications like roads and highways, tunnels,
+                smart campus and airport monitoring. It is easily integrable
+                with a Smart Pole/Intelligent Pole.
+              </p>
+            </div>
+            <div>
+              <button class="company-btn mt-3">Company Profile</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="image-box mt-5">
+            <img src="./image/F_F CONCEPT 1.png" class="img-fluid" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--About Klima Air End -->
+
+    <!--Product Featuers -->
+    <section class="container-fluid Product-box mt-5">
+      <div class="container">
+        <div class="row py-5">
+          <div class="text-container d-flex justify-content-between mt-4">
+            <div class="product-text">
+              <p class="about-text">
+                Product <span class="klimacolor">Featuers</span>
+              </p>
+            </div>
+            <div class="mt-4">
+              <a href="/" class="view-link">View all...</a>
+            </div>
+          </div>
+          <div class="mt-5 card-content">
+            <div class="row justify-content-center text-center">
+              <div class="col-md-4">
+                <div class="card text-center" style="width: 18rem">
+                  <div class="card-body mt-4">
+                    <div>
+                      <img src="./image/Group 10.png" class="img-fluid" />
+                    </div>
+                    <h6 class="card-subtitle mt-4 mb-3">Techology</h6>
+                    <p class="card-text">
+                      Works on innovative laser technology for higher data
+                      accuracy.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="card" style="width: 18rem">
+                  <div class="card-body mt-4">
+                    <div>
+                      <img src="./image/Group 11.png" class="img-fluid" />
+                    </div>
+                    <h6 class="card-subtitle mt-4 mb-3">Tamper Proof</h6>
+                    <p class="card-text">
+                      Comes with a security system to avoid
+                      tampering/malfunction/sabotage.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="card" style="width: 18rem">
+                  <div class="card-body mt-4">
+                    <div>
+                      <img src="./image/Group 12.png" class="img-fluid" />
+                    </div>
+
+                    <h6 class="card-subtitle mb-3 mt-4">Over-The-Air Updata</h6>
+                    <p class="card-text">
+                      Automatically upgradeable from a central server without
+                      any onsite visit.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row mt-4 text-center">
+              <div class="col-md-4">
+                <div class="card" style="width: 18rem">
+                  <div class="card-body mt-4">
+                    <div>
+                      <img src="./image/Group 13.png" class="img-fluid" />
+                    </div>
+
+                    <h6 class="card-subtitle mb-3 mt-4">Real-Time Data</h6>
+                    <p class="card-text">
+                      Continuous monitoring and real-time data transfer at
+                      configurable intervals.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="card" style="width: 18rem">
+                  <div class="card-body mt-4">
+                    <div>
+                      <img src="./image/Group 14.png" class="img-fluid" />
+                    </div>
+
+                    <h6 class="card-subtitle mt-4 mb-3">Internal Storage</h6>
+                    <p class="card-text">
+                      Internal data storage capacity of up to 8GB or 90 days.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="card" style="width: 18rem">
+                  <div class="card-body mt-4">
+                    <div>
+                      <img src="./image/Group 15.png" class="img-fluid" />
+                    </div>
+
+                    <h6 class="card-subtitle mb-3 mt-4">Weather Resistant</h6>
+                    <p class="card-text">
+                      IP66 Grade (certified) enclosure for endurance against
+                      harsh weather.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--Product Featuers End -->
+
+    <!--Why you choose Klima -->
+    <section class="container-fluid mt-5">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="box-image me-3 w-75">
+            <img src="./image/Layer 4 1.png" class="img-fluid" />
+          </div>
+        </div>
+
+        <div class="col-md-6 mt-5">
+          <div>
+            <h6 class="choose-head-text">
+              Why choose <span class="klimacolor"> Klima Air</span>
+            </h6>
+            <p class="choose-text me-5">
+              We manufacture reliable solutions for accurate gas & particles
+              analysis and environmental monitoring.
+            </p>
+          </div>
+          <div class="row">
+            <div class="col-md-6">
+              <div>
+                <img src="image/number1.png" class="" />
+              </div>
+              <p class="num-headre mt-3 mb-2">Easy to install</p>
+              <p class="nun-text">
+                Effortless installation with versatile mounting arrangements.
+              </p>
+            </div>
+            <div class="col-md-6">
+              <div>
+                <img src="image/number2.png" class="" />
+              </div>
+              <p class="num-headre mt-3 mb-2">Cloud Platform</p>
+              <p class="nun-text">
+                Visualize and analyze data in the cloud. Easy data integration
+                via APIs.
+              </p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6 mt-5">
+              <div>
+                <img src="image/number3.png" class="" />
+              </div>
+              <p class="num-headre mt-3 mb-2">Seamless Connectivity</p>
+              <p class="nun-text">
+                A wide range of options of wired and wireless connectivity.
+              </p>
+            </div>
+            <div class="col-md-6 mt-5">
+              <div>
+                <img src="image/number4.png" class="" />
+              </div>
+              <p class="num-headre mt-3 mb-2">Multi-Parameter</p>
+              <p class="nun-text">
+                Compatible with a wide range of parameters including PM, gases
+                and meteorological parameters
+              </p>
+            </div>
+          </div>
+          <div class="btn-readMore mt-5 py-5">
+            <button class="more-btn">Read More</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--Why you choose Klima End -->
+
+
+
+
+    <div class="Central-Image h-100">
+      <!-- <img
+        src="./image/d[1] 1.png"
+        class="w-100"
+        alt=""
+        style="height: 550px"
+      /> -->
+      <div class=" text-center py-5 my-5">
+        <h5 class="card-title text-white fs-3">
+          Do you have a specific requirement?
+        </h5>
+        <p class="card-text text-white pt-1">
+          Schedule a call with our expert team and get a customised
+          <br />solutionfor your air quality monitoring requirement
+        </p>
+        <button type="submit" class="btn btn-success pt-2">
+          Request a Call
+        </button>
       </div>
     </div>
-  </nav>
-  <!--NavBar End -->
-      <!-- Bootstrap javascript link-->
+
+    <!-- 1st SECTION -->
+    <section>
+      <div class="row justify-content-center  pt-5 ">
+        <div class="col-lg-8">
+          <div class="section-title text-center">
+            <h2 class="fw-bold mb-5">Product <span class="">Usecases</span></h2>
+
+            <!-- Slider main container -->
+            <div class="swiper">
+              <!-- Additional required wrapper -->
+              <div class="swiper-wrapper gap-1 ">
+                <!-- Slides -->
+                <div class="swiper-slide ">
+                  <div class="card-2">
+                    <img
+                      src="./image/Rectangle 11.png"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                    <div class="card-body text-start">
+                      <h5 class="card-title text-success">Mining Site</h5>
+                      <p class="card-text">
+                        Deforestation, water pollution, and habitat destruction
+                        at mining sites influence environmental authorities to
+                        monitor, analyze...
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="card-2">
+                    <img
+                      src="./image/Rectangle 13.png"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                    <div class="card-body text-start">
+                      <h5 class="card-title text-success">Food Processing</h5>
+                      <p class="card-text">
+                        Food processing activities contribute to climate change
+                        through greenhouse gas emissions. Adopting eco-friendly
+                        technologies and...
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="card-2">
+                    <img
+                      src="./image/Rectangle 15.png"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                    <div class="card-body text-start">
+                      <h5 class="card-title">Smart City</h5>
+                      <p class="card-text">
+                        Environmental pollution monitoring systems such as IOT
+                        sensors, and other smart technologies in cities provide
+                        city authorities...
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="card-2">
+                    <img
+                      src="./image/Rectangle 11.png"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                    <div class="card-body text-start">
+                      <h5 class="card-title">Mining Site</h5>
+                      <p class="card-text">
+                        Deforestation, water pollution, and habitat destruction
+                        at mining sites influence environmental authorities to
+                        monitor, analyze...
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="card-2">
+                    <img
+                      src="./image/Rectangle 13.png"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                    <div class="card-body text-start">
+                      <h5 class="card-title text-success">Food Processing</h5>
+                      <p class="card-text">
+                        Food processing activities contribute to climate change
+                        through greenhouse gas emissions. Adopting eco-friendly
+                        technologies and...
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="card-2">
+                    <img
+                      src="./image/Rectangle 15.png"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                    <div class="card-body text-start">
+                      <h5 class="card-title text-success">Smart City</h5>
+                      <p class="card-text">
+                        Environmental pollution monitoring systems such as IOT
+                        sensors, and other smart technologies in cities provide
+                        city authorities...
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="card-2">
+                    <img
+                      src="./image/Rectangle 11.png"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                    <div class="card-body text-start">
+                      <h5 class="card-title text-success">Mining Site</h5>
+                      <p class="card-text">
+                        Deforestation, water pollution, and habitat destruction
+                        at mining sites influence environmental authorities to
+                        monitor, analyze...
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="card-2">
+                    <img
+                      src="./image/Rectangle 13.png"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                    <div class="card-body text-start">
+                      <h5 class="card-title text-success">Food Processing</h5>
+                      <p class="card-text">
+                        Food processing activities contribute to climate change
+                        through greenhouse gas emissions. Adopting eco-friendly
+                        technologies and...
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="card-2">
+                    <img
+                      src="./image/Rectangle 15.png"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                    <div class="card-body text-start">
+                      <h5 class="card-title text-success">Smart City</h5>
+                      <p class="card-text">
+                        Environmental pollution monitoring systems such as IOT
+                        sensors, and other smart technologies in cities provide
+                        city authorities...
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="swiper-slide">
+                  <div class="card-2">
+                    <img
+                      src="./image/Rectangle 11.png"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                    <div class="card-body text-start">
+                      <h5 class="card-title text-success">Mining Site</h5>
+                      <p class="card-text">
+                        Deforestation, water pollution, and habitat destruction
+                        at mining sites influence environmental authorities to
+                        monitor, analyze...
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- If we need navigation buttons -->
+              <div class="swiper-button-prev text-white"></div>
+              <div class="swiper-button-next text-white"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- END OF SECTION -->
+
+    <!-- Our what what... -->
+    <section class="" style="background-color: #f6f6f6">
+      <div class="row justify-content-center pt-5">
+        <div class="col-lg-8">
+          <div class="section-title text-center">
+            <h2 class="fw-bold mb-5">
+              Our <span class="">Clients & Partners</span>
+            </h2>
+
+            <div class="container mb-3">
+              <div class="row">
+                <div class="col-md-4">
+                  <div class="card">
+                    <div class="card-body">
+                      <img
+                        src="./image/our/IMG-20230707-WA0011 1.png"
+                        class="mt-5 img-fluid"
+                        alt="card-1"
+                      />
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-4">
+                  <div class="card">
+                    <div class="card-body">
+                      <img
+                        src="./image/our/IMG-20230707-WA0013 1.png"
+                        class=" mt-5 img-fluid"
+                        alt="card-1"
+                      />
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-4">
+                  <div class="card">
+                    <div class="card-body">
+                      <img
+                        src="./image/our/IMG-20230707-WA0014 1.png"
+                        class="py-4 mt-5 img-fluid"
+                        alt="card-1"
+                      />
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+              
+            </div>
+            
+          </div>
+        </div>
+      </div>
+      <div class="row justify-content-center pt-">
+        <div class="col-lg-12">
+          <div class="section-title text-center">
+            
+            <div class="container mb-3">
+              <div class="row">
+                <div class="col-md-3">
+                  <div class="card">
+                    <div class="card-body">
+                      <img
+                      src="./image/our/IMG-20230707-WA0020 1.png"
+                        class="mt-5 img-fluid "
+                        alt="card-1"
+                      />
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-3">
+                  <div class="card">
+                    <div class="card-body">
+                      <img
+                      src="./image/our/IMG-20230707-WA0021 1.png"
+                        class=" mt-5 img-fluid"
+                        alt="card-1"
+                      />
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-3">
+                  <div class="card">
+                    <div class="card-body">
+                      <img
+                      src="./image/our/IMG-20230707-WA0023 1.png"
+                        class="py-4 mt-5 img-fluid"
+                        alt="card-1"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="card">
+                    <div class="card-body">
+                      <img
+                      src="./image/our/Layer 527 1.png"
+                        class="py-4 mt-4 img-fluid"
+                        alt="card-1"
+                      />
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+              
+            </div>
+            
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- <section>
+  <div class="row justify-content-center pt-5">
+    <div class="col-lg-8">
+        <div class="section-title text-center">
+          <h2 class="fw-bold mb-5">Our <span class="text-success">Clients & Partners</span></h2>
+        </div>
+    </div>
+  </div>
+</section> -->
+
+    <section class="contacts py-5">
+      <div class="container-lg py-4">
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <div class="section-title text-center">
+              <h2 class="fw-bold mb-5">
+                Our <span class="">Clients & Partners</span>
+              </h2>
+            </div>
+          </div>
+        </div>
+
+        <div class="row pt-3">
+          <div class="col-md-6">
+            <div class="contact-item d-flex mb-3">
+              <h1>
+                Stay updated on air quality monitoring
+                <span class="">news & updates</span>
+              </h1>
+            </div>
+            <p class="fs-4">
+              Sign up for our newsletter to stay updated with industry news, air
+              quality monitoring trends, new product releases, and company
+              updates.
+            </p>
+
+            <div class="contact-item mb-4">
+              <form>
+                <div class="mb-3">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="formGroupExampleInput"
+                    placeholder="Enter Name"
+                  />
+                </div>
+                <div class="mb-3">
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="formGroupExampleInput2"
+                    placeholder="Enter Email Adress"
+                  />
+                </div>
+                <!-- <button class="btn btn-success" type="button">Subscribe</button>  -->
+                <div class="d-grid gap-2 mt-5">
+                  <button class="btn" type="button">Subscribe</button>
+                </div>
+              </form>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="contact-img">
+              <img src="./image/Rectangle 26.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer
+      class="text-center text-lg-start text-white" style="background-color: black">
+      <!-- Grid container -->
+      <div class="container p-4 pb-0">
+        <!-- Section: Links -->
+        <section class="">
+          <!--Grid row-->
+          <div class="row">
+            <!-- Grid column -->
+            <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+              <img src="./image/KlimaSenso.png" alt="footer-logo" />
+              <div class="ham pt-3">
+                <p>
+                  Klima Senso Offers
+                </p>
+                <p>
+                  Our data analytics 
+                </p>
+                <p>
+                   Environmental data
+                </p>
+              </div>
+              <div class="row">
+                <div class="col-md-2 col-2">
+                  <img  src="./image/Frame 45.png" />
+                </div>
+                <div class="col-md-2 col-2">
+                  <img  src="./image/Frame 42.png" />
+                </div>
+                <div class="col-md-2 col-2">
+                  <img  src="./image/Frame 43.png" />
+                </div>
+                <div class="col-md-2 col-2">
+                  <img  src="./image/Frame 44.png" />
+                </div>
+              </div>
+              <div class="row mt-5">
+               <div class="col-md-3 ">
+                <img src="./image/Frame 50.png" alt="">
+               </div>
+               <div class="col-md-6"> <p class="text-dark-emphasis ">+233 003 838474</p></div>
+              </div>
+            </div>
+            <!-- Grid column -->
+
+            <!-- <hr class="w-100 clearfix d-md-none"/> -->
+
+            <!-- Grid column -->
+            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3 text-decoration-none">
+              <h6 class="text-uppercase mb-4 fw-bold" style="color: #72CB13;">Quick Links</h6>
+              <p>
+                <a class="text-white">About KlimaSenso</a>
+              </p>
+              <p>
+                <a class="text-white">Our technology</a>
+              </p>
+              <p>
+                <a class="text-white">Knowledge bank</a>
+              </p>
+              <p>
+                <a class="text-white">Events and webinars</a>
+              </p>
+              <p>
+                <a class="text-white">Press kit</a>
+              </p>
+              <p>
+                <a class="text-white">Careers</a>
+              </p>
+              <p>
+                <a class="text-white">News</a>
+              </p>
+              <p>
+                <a class="text-white">Blog</a>
+              </p>
+            </div>
+            <!-- Grid column -->
+
+            <!-- <hr class="w-100 clearfix d-md-none" /> -->
+
+            <!-- Grid column -->
+            <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+              <h6 class="text-uppercase mb-4 fw-bold" style="color: #72CB13;">Sectors</h6>
+              <p>
+                <a class="text-white">Urban Air quality monitoring</a>
+              </p>
+              <p>
+                <a class="text-white">Odour Monitoring</a>
+              </p>
+              <p>
+                <a class="text-white">Air quality monitoring for industries</a>
+              </p>
+              <p>
+                <a class="text-white">Air quality research</a>
+              </p>
+            </div>
+
+            <!-- Grid column -->
+            <!-- <hr class="w-100 clearfix d-md-none" /> -->
+
+            
+          </div>
+          <!--Grid row-->
+        </section>
+        <!-- Section: Links -->
+
+        
+
+       
+      </div>
+          <!-- Section: Copyright -->
+          <section class="p-3 pt-0 mx-0 bg-ligth text-dark-emphasis">
+            <div class="row d-flex">
+              <!-- Grid column -->
+              <div class="d-flex text-black justify-content-center mt-2">
+                <!-- Copyright -->
+                <div class="p-3">
+                  <a class="text-dark-emphasis" href="#">© 2023 KlimaSenso.</a>
+                </div>
+                <div class="p-3">
+                  <a class="text-dark-emphasis" href="#">Terms of use</a>
+                </div>
+                <div class="p-3">
+                  <a class="text-dark-emphasis" href="#">Privacy Policy</a>
+                </div>
+                <!-- Copyright -->
+             </div>
+            </div>
+          </section>
+          <!-- Section: Copyright -->
+      <!-- Grid container -->
+    </footer>
+    <!-- Footer -->
+
+
+
+    <!-- Bootstrap javascript link-->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+      const swiper = new Swiper(".swiper", {
+        // Optional parameters
+        direction: "horizontal",
+        loop: true,
+        slidesPerView: 3, // Number of slides per view
+        spaceBetween: 6, // Space between slides
+        autoplay: true,
+
+        // If we need pagination
+        pagination: {
+          el: ".swiper-pagination",
+        },
+
+        // Navigation arrows
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+
+        // And if we need scrollbar
+        // scrollbar: {
+        //   el: '.swiper-scrollbar',
+        // },
+      });
+    </script
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
       integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
