@@ -282,14 +282,12 @@ span {
 /* .swiper-button-prev{
   padding-right:900% !important ;
 } */
-.card {
+/* .card {
 
-  width: 272px !important;
-  height: 126px;
   border-radius: 20px;
   border: 3px solid #e4e3e3;
   background: #fff;
-}
+} */
 .card-title{
     color: #039d3f;
 }
@@ -311,6 +309,17 @@ font-style: normal;
 font-weight: 700;
 
 }
+
+.card-client{
+  border-radius: 25px !important;
+  border: 1px solid #E4E3E3 !important;
+  background: #FFF !important;
+  width: 178px !important;
+height: 126px !important;
+  /* width: 324px !important;
+  height: 174px !important; */
+}
+
 /* .swiper-button-prev{
   position: relative !important;
   right: 10% !important;
