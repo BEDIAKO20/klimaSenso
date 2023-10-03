@@ -304,6 +304,13 @@ span {
   height: 100% !important;
   /* width: 100% !important; */
 }
+.updated-text{
+  color: #000;
+font-size: 33px;
+font-style: normal;
+font-weight: 700;
+
+}
 /* .swiper-button-prev{
   position: relative !important;
   right: 10% !important;
@@ -312,9 +319,30 @@ span {
   background-color: #FFF;
   color: #000 !important;
 }
-/* .so-icon{
-  color;
-} */
+.updata-box{
+  margin-top: 9%;
+}
+.sign-up{
+  width: 598px;
+  color: #000;
+font-size: 20px;
+font-style: normal;
+font-weight: 500;
+line-height: 34px; /* 141.667% */
+}
+
 a{
   text-decoration: none !important
 }
+/* .nav-link:hover::after{
+  content: '' !important; 
+  display: block !important; 
+  background: #039D3F !important;
+  width: 100px !important;
+  height: 50px !important;
+  
+} */
+
+/* .active, .nav-link:hover {
+  background: #039D3F !important;
+} */
