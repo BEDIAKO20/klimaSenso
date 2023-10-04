@@ -44,6 +44,28 @@ width: 30px;
   
   
 }
+@media (min-width:320px) and (max-width:480px){
+  .carousel-caption{
+    text-align: center;
+  }
+  .overlay-box{
+    /* background-color: #000; */
+    background-color: rgba(0, 0, 0, 0.5); 
+    padding: 20px; /* Add padding to the text box for better visibility */
+    border-radius: 10px; /* Add border-radius for rounded corners */
+    width: 100%;
+    height:70% ;
+    margin-left: 1%;
+  }
+  .carouel-headre{
+    padding-bottom: 20%;
+    color: #FFF;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 200;
+  /* letter-spacing: 2px; */
+  } 
+}
 .entext{
   margin-right: 3%;
 }
@@ -274,11 +296,11 @@ line-height: normal;
 span {
   color: #039d3f;
 }
-.swiper {
+/* .swiper {
   width: 800px;
   height: 400px;
   gap: 10px;
-}
+} */
 /* .swiper-button-prev{
   padding-right:900% !important ;
 } */
