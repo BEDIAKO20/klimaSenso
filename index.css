@@ -44,31 +44,160 @@ width: 30px;
   
   
 }
-@media (min-width:320px) and (max-width:480px){
-  .carousel-caption{
-    text-align: center;
+
+/* Laptop-Screen */
+@media only screen and (min-width: 768px) and (max-width: 1920px) {
+  .phones-carousel {
+    display: none;
   }
-  .overlay-box{
-    /* background-color: #000; */
-    background-color: rgba(0, 0, 0, 0.5); 
-    padding: 20px; /* Add padding to the text box for better visibility */
-    border-radius: 10px; /* Add border-radius for rounded corners */
-    width: 100%;
-    height:70% ;
-    margin-left: 1%;
+  .about-text {
+    color: #000;
+    font-family: "Poppins", sans-serif;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
   }
-  .carouel-headre{
-    padding-bottom: 20%;
-    color: #FFF;
-  font-size: 30px;
+  .card-client{
+    border-radius: 25px !important;
+    border: 1px solid #E4E3E3 !important;
+    background: #FFF !important;
+    width: 178px !important;
+  height: 126px !important;
+    /* width: 324px !important;
+    height: 174px !important; */
+  }
+  .about-pre{
+    width: 750px;
+  }
+  .updated-text{
+    color: #000;
+  font-size: 33px;
   font-style: normal;
-  font-weight: 200;
-  /* letter-spacing: 2px; */
-  } 
+  font-weight: 700;
+  
+  }
+  .sign-up{
+    width: 598px;
+    color: #000;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 34px; /* 141.667% */
+  }
+  .form-control{
+    width:89% !important;
+  }
+  .btn-sub{
+    width:89% !important;
+    border-radius: 6px;
+    border: 2px solid #FFF;
+    background: #039D3F;
+    display: flex;
+  height: 60px;
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+  color: #FFF;
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  }
 }
-.entext{
-  margin-right: 3%;
-}
+/* Laptop-Screen End */
+
+
+/* Mobile-Screen  */
+@media (min-width:320px) and (max-width:480px){
+  .desktop-carousel{
+    display: none !important;
+  }
+  .card{
+    border-radius: 25px !important;
+  border: 1px solid #E4E3E3 !important;
+  background: #FFF !important;
+  width: 994% !important;
+  height: 234px !important;
+  margin: 2%;
+  margin-right: 17%;
+  justify-content: center;
+  /* border: none !important; */
+  }
+  .about-text {
+    color: #000;
+    font-family: "Poppins", sans-serif;
+    font-size: 19px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  .card-client{
+    border-radius: 25px !important;
+    border: 1px solid #E4E3E3 !important;
+    background: #FFF !important;
+    width: 330px !important;
+  height: 226px !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 1%;
+    /* width: 324px !important;
+    height: 174px !important; */
+  }
+  .updated-text{
+    color: #000;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 700;
+  
+  }
+  .contact-img{
+    margin-top: 10%;
+  }
+  .sign-up{
+    width: 598px;
+    color: #000;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+width: 100%;
+  }
+  .img-responsive{
+    width: 100% !important;
+  }
+  .btn-sub{
+  
+    border-radius: 6px;
+    border: 2px solid #FFF;
+    background: #039D3F;
+    display: flex;
+  height: 60px;
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+  color: #FFF;
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  }
+  }
+  /* Mobile-Screen End */
+
+
+
+
+
+
+
 .en-text{
   margin-right: 14%;
 }
@@ -115,14 +244,7 @@ width: 30px;
 .text-box{
   margin-top: 18%;
 }
-.about-text {
-  color: #000;
-  font-family: "Poppins", sans-serif;
-  font-size: 28px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: normal;
-}
+
 .klimacolor{
   color: #039D3F;
 }
@@ -134,9 +256,7 @@ font-style: normal;
 font-weight: 300;
 line-height: normal;
 }
-.about-pre{
-  width: 760px;
-}
+
 .company-btn{
   border-radius: 6px;
   border: 2px solid #FFF;
@@ -304,12 +424,7 @@ span {
 /* .swiper-button-prev{
   padding-right:900% !important ;
 } */
-/* .card {
 
-  border-radius: 20px;
-  border: 3px solid #e4e3e3;
-  background: #fff;
-} */
 .card-title{
     color: #039d3f;
 }
@@ -324,23 +439,7 @@ span {
   height: 100% !important;
   /* width: 100% !important; */
 }
-.updated-text{
-  color: #000;
-font-size: 33px;
-font-style: normal;
-font-weight: 700;
 
-}
-
-.card-client{
-  border-radius: 25px !important;
-  border: 1px solid #E4E3E3 !important;
-  background: #FFF !important;
-  width: 178px !important;
-height: 126px !important;
-  /* width: 324px !important;
-  height: 174px !important; */
-}
 
 /* .swiper-button-prev{
   position: relative !important;
@@ -353,14 +452,7 @@ height: 126px !important;
 .updata-box{
   margin-top: 9%;
 }
-.sign-up{
-  width: 598px;
-  color: #000;
-font-size: 20px;
-font-style: normal;
-font-weight: 500;
-line-height: 34px; /* 141.667% */
-}
+
 
 a{
   text-decoration: none !important
