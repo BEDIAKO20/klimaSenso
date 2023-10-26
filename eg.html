@@ -55,25 +55,354 @@ bottom: 190%;
     bottom:69%;
   
   }
+
+
+
+  @media screen and (min-width:568px) {
+  .card-wrapper{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+  .card-carousle{
+    width: 28% ;
+      border-radius: 25px !important;
+      border: 1px solid #E4E3E3 !important;
+      background: #fff !important;
+  }
+  
+  .carousle-image{
+    width: 86% !important ;
+    margin-left: 7%;
+  }
+}
+
+
+@media screen and (max-width: 576px) {
+  .card-carousle:not(:first-child){
+      display: none;
+  }
+  .card-carousle{
+   
+      border-radius: 25px !important;
+      border: 1px solid #E4E3E3 !important;
+      background: #fff !important;
+  }
+  .carousle-image{
+    width: 86% !important ;
+    margin-left: 7%;
+  }
+}
 </style>
 <body>
-  <div id="carouselExampleCaptions" class="carousel slide">
-    <div class="carousel-indicators">
-      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+       <!-- Slider main container   -->
+       <div id="carouselExampleAutoplaying" class="carousel-dark slide d-none d-sm-block" data-bs-ride="carousel">  
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+           <div class="card-wrapper ">
+
+            <div class="card-carousle me-3">
+              <div class="image-Warpper">
+                <img src="./image/Rectangle 11.png" class="card-img-top  img-fluid  mt-4  carousle-image alt="...">
+              </div>
+                <div class="caqrd-body ">
+              
+                <div class="my-3">
+                  <h5 class="card-title text-success ms-4">Mining Site</h5>
+                  <p class="text-carousel  ms-4 mt-2">
+                    Deforestation, water pollution, and habitat destruction
+                    at mining sites influence environmental authorities to
+                    monitor, analyze...
+                  </p>
+                </div>
+
+                </div>
+              </div>
+
+           <div class="card-carousle me-3">
+              <div class="image-Warpper">
+                <img src="./image/Rectangle 13.png" class="card-img-top  img-fluid  mt-4  carousle-image alt="...">
+              </div>
+                <div class="caqrd-body ">
+              
+                <div class="my-3">
+                  <h5 class="card-title text-success ms-4">Mining Site</h5>
+                  <p class="text-carousel  ms-4 mt-2">
+                    Food processing activities contribute to climate change
+                  through greenhouse gas emissions. Adopting eco-friendly
+                  technologies and...
+
+                  </p>
+                </div>
+
+                </div>
+              </div>
+
+              <div class="card-carousle me-2">
+                <div class="image-Warpper">
+                  <img src="./image/Rectangle 15.png" class="card-img-top  img-fluid  mt-4  carousle-image alt="...">
+                </div>
+                  <div class="caqrd-body ">
+                
+                  <div class="my-3">
+                    <h5 class="card-title text-success ms-4">Mining Site</h5>
+                    <p class="text-carousel  ms-4 mt-2">
+                      Environmental pollution monitoring systems such as IOT
+                      sensors, and other smart technologies in cities provide
+                      city authorities...    
+                    </p>
+                  </div>
+
+                  </div>
+                </div>
+           </div>
+          </div>
+          <div class="carousel-item">
+            <div class="card-wrapper ">
+
+              <div class="card-carousle me-3">
+                <div class="image-Warpper">
+                  <img src="./image/Rectangle 11.png" class="card-img-top  img-fluid  mt-4  carousle-image alt="...">
+                </div>
+                  <div class="caqrd-body ">
+                
+                  <div class="my-3">
+                    <h5 class="card-title text-success ms-4">Mining Site</h5>
+                    <p class="text-carousel  ms-4 mt-2">
+                      Deforestation, water pollution, and habitat destruction
+                      at mining sites influence environmental authorities to
+                      monitor, analyze...
+                    </p>
+                  </div>
+
+                  </div>
+                </div>
+  
+             <div class="card-carousle me-3">
+                <div class="image-Warpper">
+                  <img src="./image/Rectangle 13.png" class="card-img-top  img-fluid  mt-4  carousle-image alt="...">
+                </div>
+                  <div class="caqrd-body ">
+                
+                  <div class="my-3">
+                    <h5 class="card-title text-success ms-4">Mining Site</h5>
+                    <p class="text-carousel  ms-4 mt-2">
+                      Food processing activities contribute to climate change
+                    through greenhouse gas emissions. Adopting eco-friendly
+                    technologies and...
+
+                    </p>
+                  </div>
+
+                  </div>
+                </div>
+  
+                <div class="card-carousle me-2">
+                  <div class="image-Warpper">
+                    <img src="./image/Rectangle 15.png" class="card-img-top  img-fluid  mt-4  carousle-image alt="...">
+                  </div>
+                    <div class="caqrd-body ">
+                  
+                    <div class="my-3">
+                      <h5 class="card-title text-success ms-4">Mining Site</h5>
+                      <p class="text-carousel  ms-4 mt-2">
+                        Environmental pollution monitoring systems such as IOT
+                        sensors, and other smart technologies in cities provide
+                        city authorities...    
+                      </p>
+                    </div>
+
+                    </div>
+                  </div>
+             </div>
+          </div>
+          <div class="carousel-item">
+            <div class="card-wrapper ">
+
+              <div class="card-carousle me-3">
+                <div class="image-Warpper">
+                  <img src="./image/Rectangle 11.png" class="card-img-top  img-fluid  mt-4  carousle-image alt="...">
+                </div>
+                  <div class="caqrd-body ">
+                
+                  <div class="my-3">
+                    <h5 class="card-title text-success ms-4">Mining Site</h5>
+                    <p class="text-carousel  ms-4 mt-2">
+                      Deforestation, water pollution, and habitat destruction
+                      at mining sites influence environmental authorities to
+                      monitor, analyze...
+                    </p>
+                  </div>
+
+                  </div>
+                </div>
+  
+             <div class="card-carousle me-3">
+                <div class="image-Warpper">
+                  <img src="./image/Rectangle 13.png" class="card-img-top  img-fluid  mt-4  carousle-image alt="...">
+                </div>
+                  <div class="caqrd-body ">
+                
+                  <div class="my-3">
+                    <h5 class="card-title text-success ms-4">Mining Site</h5>
+                    <p class="text-carousel  ms-4 mt-2">
+                      Food processing activities contribute to climate change
+                    through greenhouse gas emissions. Adopting eco-friendly
+                    technologies and...
+
+                    </p>
+                  </div>
+
+                  </div>
+                </div>
+  
+                <div class="card-carousle me-2">
+                  <div class="image-Warpper">
+                    <img src="./image/Rectangle 15.png" class="card-img-top  img-fluid  mt-4  carousle-image alt="...">
+                  </div>
+                    <div class="caqrd-body ">
+                  
+                    <div class="my-3">
+                      <h5 class="card-title text-success ms-4">Mining Site</h5>
+                      <p class="text-carousel  ms-4 mt-2">
+                        Environmental pollution monitoring systems such as IOT
+                        sensors, and other smart technologies in cities provide
+                        city authorities...    
+                      </p>
+                    </div>
+
+                    </div>
+                  </div>
+             </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+      <div class="section-title text-center">
+        <h2 class="fw-bold mb-5">Product <span class="">Usecases</span></h2>
+      </div>
+     
+       <!-- Phone Carousel -->
+<div id="carouselExample" class="carousel-dark slide  d-sm-none" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <div class="card-carousle">
+        <div class="image-Warpper">
+          <img src="./image/Rectangle 11.png" class="card-img-top  img-fluid  mt-4  carousle-image alt="...">
+        </div>
+          <div class="caqrd-body ">
+        
+          <div class="my-3">
+            <h5 class="card-title text-success ms-4">Mining Site</h5>
+            <p class="text-carousel  ms-4 mt-2">
+              Deforestation, water pollution, and habitat destruction
+              at mining sites influence environmental authorities to
+              monitor, analyze...
+            </p>
+          </div>
+
+          </div>
+        </div>
     </div>
-    <div class="carousel-inner">
+    <div class="carousel-item">
+      <div class="card-carousle ">
+        <div class="image-Warpper">
+          <img src="./image/Rectangle 13.png" class="card-img-top  img-fluid  mt-4  carousle-image alt="...">
+        </div>
+          <div class="caqrd-body ">
+        
+          <div class="my-3">
+            <h5 class="card-title text-success ms-4">Mining Site</h5>
+            <p class="text-carousel  ms-4 mt-2">
+              Food processing activities contribute to climate change
+            through greenhouse gas emissions. Adopting eco-friendly
+            technologies and...
+
+            </p>
+          </div>
+
+          </div>
+        </div>
+    </div>
+ 
+      
+    <div class="carousel-item">
+      <div class="card-carousle ">
+        <div class="image-Warpper">
+          <img src="./image/Rectangle 15.png" class="card-img-top  img-fluid  mt-4  carousle-image alt="...">
+        </div>
+          <div class="caqrd-body ">
+        
+          <div class="my-3">
+            <h5 class="card-title text-success ms-4">Mining Site</h5>
+            <p class="text-carousel  ms-4 mt-2">
+              Environmental pollution monitoring systems such as IOT
+              sensors, and other smart technologies in cities provide
+              city authorities...    
+            </p>
+          </div>
+
+          </div>
+        </div>
+    </div>
+    <div class="carousel-item">
+      <div class="card-carousle ">
+        <div class="image-Warpper">
+          <img src="./image/Rectangle 15.png" class="card-img-top  img-fluid  mt-4  carousle-image alt="...">
+        </div>
+          <div class="caqrd-body ">
+        
+          <div class="my-3">
+            <h5 class="card-title text-success ms-4">Mining Site</h5>
+            <p class="text-carousel  ms-4 mt-2">
+              Environmental pollution monitoring systems such as IOT
+              sensors, and other smart technologies in cities provide
+              city authorities...    
+            </p>
+          </div>
+
+          </div>
+        </div>    
+    </div>
+    <div class="carousel-item">
+      <div class="card-carousle ">
+        <div class="image-Warpper">
+          <img src="./image/Rectangle 15.png" class="card-img-top  img-fluid  mt-4  carousle-image alt="...">
+        </div>
+          <div class="caqrd-body ">
+        
+          <div class="my-3">
+            <h5 class="card-title text-success ms-4">Mining Site</h5>
+            <p class="text-carousel  ms-4 mt-2">
+              Environmental pollution monitoring systems such as IOT
+              sensors, and other smart technologies in cities provide
+              city authorities...    
+            </p>
+          </div>
+
+          </div>
+        </div>
+    </div>
     
-    </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
-    </button>
-  </div>
+ 
+  <button class="carousel-control-prev " type="button" data-bs-target="#carouselExampleControlsSmallScreen" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControlsSmallScreen" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+<!-- Phone Carousel End-->
+</div>
 </body>
 </html>

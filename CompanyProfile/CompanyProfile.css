@@ -1,0 +1,326 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+/* CUSTOMIZE THE CAROUSEL
+-------------------------------------------------- */
+
+:root{
+    --main-color:#039D3F;
+}
+
+html{
+  overflow-x: hidden;
+}
+body{
+  font-family: "Poppins", sans-serif !important;
+}
+
+
+.nav-underline{
+    color: var(--main-color) !important;
+  }
+  .active{
+    color: var(--main-color) !important;
+  }
+
+  .active:hover{
+    color: var(--main-color) !important;
+  }
+
+  .link-color{
+    color: var(--main-color);
+  text-decoration: none;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  }
+  .explore-pro{
+    border-radius: 6px;
+  border: 1px solid var(--main-color);
+  background: none;
+  display: flex;
+  padding: 5px 8px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  color: var(--main-color);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  }
+  
+  .Klima-texts{
+    color: var(--main-color);
+font-size: 56px;
+font-style: normal;
+font-weight: 600;
+line-height: 100.5%; /* 84.42px */
+  }
+
+  .klima-text{
+    width: 798px;
+    color: #000;
+    font-family: "Poppins", sans-serif;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  }
+  img{
+    margin-left: 34% !important ;
+  
+  }
+
+  .klima-container{
+    background-color: #F6F6F6 !important;
+  }
+
+  .text-box{
+
+  }
+
+  .data-text{
+    color: #000;
+font-size: 45px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+margin-top: 10%;
+  }
+  .text-arch{
+    color: var(--main-color);
+  }
+  .data-image{
+    margin-right: 23%;
+  }
+  .data-pre{
+    width: 980px;
+    color: #000;
+text-align: center;
+font-size: 19px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+margin-left: 15%;
+  }
+  .insrallation-process{
+    color: #000;
+    font-size: 45px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+  }
+
+  .easy-text{
+    color: #000;
+font-size: 24px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+
+  }
+
+  .airklima-text{
+    /* width: 100%; */
+    width: 950px;
+    color: #000;
+    /* text-align: center; */
+font-size: 17px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+margin-left: 15%;
+  }
+
+
+
+  .klima-imge1{
+    background-image: url(/image/image-32-x.png) !important;
+    width: 130%;  
+    height: 231px !important;
+    flex-shrink: 0;
+    /* width: 130%; */
+    /* height: % !important; */
+     background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+height: 271px;
+border: 2px solid  lightgray ;
+border-radius:  10px;
+  }
+  .klima-imge1:hover{
+    border: 3px solid #039D3F;
+  }
+  .klima-imge2{
+    background-image: url(/image/image-4.png) !important;
+    width: 130%;  
+    height: 231px !important;
+    flex-shrink: 0;
+    /* width: 130%; */
+    /* height: % !important; */
+     background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+height: 271px;
+border: 2px solid  lightgray ;
+border-radius:  10px;
+  }
+
+  .klima-imge2:hover{
+    border: 3px solid #039D3F;
+
+  }
+  .klima-imge3{
+    background-image: url(/image/image-5.png) !important;
+    width: 130%;  
+    height: 231px !important;
+    flex-shrink: 0;
+    /* width: 130%; */
+    /* height: % !important; */
+     background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+height: 271px;
+border: 2px solid  lightgray ;
+border-radius:  10px;
+  }
+  .klima-imge3:hover{
+    border: 3px solid #039D3F;
+  }
+  .klima-imge4{
+    background-image: url(/image/image-6.png) !important;
+    width: 130%;  
+    height: 231px !important;
+    flex-shrink: 0;
+    /* width: 130%; */
+    /* height: % !important; */
+     background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+height: 271px;
+border: 2px solid  lightgray ;
+border-radius:  10px;
+  }
+  .klima-imge4:hover{
+    border: 3px solid #039D3F;
+  }
+
+  .klima-imge5{
+    background-image: url(/image/image-7.png) !important;
+    width: 130%;  
+    height: 231px !important;
+    flex-shrink: 0;
+    /* width: 130%; */
+    /* height: % !important; */
+     background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+height: 271px;
+border: 2px solid  lightgray ;
+border-radius:  10px;
+  }
+  .klima-imge5:hover{
+    border: 3px solid #039D3F;
+  }
+
+  .klimaText-Box{
+    display: none;
+    background: rgba(3, 157, 63, 0.90);
+    margin-top: 27% ;
+    border-radius:  8px;  
+  }
+
+  .klimaText-Box:hover{
+    display: block;
+  }
+
+
+  .number-rounde{
+    border:  1px solid #B3B3B3;
+    border-radius:  50px;
+    width: 50px !important;
+    color: #6D6C6C;
+text-align: center;
+font-size: 32px;
+font-style: normal;
+font-weight: 300;
+line-height: normal;
+border-style: dashed !important ;
+  }
+
+.number-roundeBox{
+  margin-left: 50%;
+}
+
+
+.installtion-box{
+  background-color: #F6F6F6;
+}
+
+.box-image{
+  width: 89% !important;
+  /* display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center; */
+  /* margin-right: 50% !important; */
+  position: relative;
+right: 27%;
+}
+
+.box-image:hover{
+  transform: scale(1.1);
+  width: 85% !important;
+}
+.box-image{
+  transition: transform 100ms ease-in-out;
+}
+.card-box{
+  border-radius: 24px;
+  border: 1px solid #DEDEDE;
+}
+
+.box-text{
+  color: #000;
+font-size: 14px;
+font-style: normal;
+font-weight: 500;
+line-height: 100.5%; /* 18.09px */
+}
+.think-box{
+
+  height: 355px;
+  flex-shrink: 0;
+  background: rgba(3, 157, 63, 0.05);
+}
+.theButtons{
+  display: flex;
+width: 222px;
+height: 60px;
+padding: 10px;
+justify-content: center;
+align-items: center;
+gap: 10px;
+border-radius: 6px;
+border: 2px solid #039D3F;
+background: none;
+color: #039D3F;
+font-size: 20px;
+font-weight: 400;
+
+}
+.theButtons:hover{
+  background: #039D3F;
+  color: #F6F6F6;
+}
+.think-text{
+  color: #000;
+
+font-size: 46px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+}
+.thinks-box{
+  padding-top: 10%;
+}

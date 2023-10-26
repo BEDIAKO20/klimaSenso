@@ -9,6 +9,8 @@
     rel="stylesheet"
     href="https://unpkg.com/swiper/swiper-bundle.min.css"
   />
+  <!--=============== SWIPER CSS ===============-->
+  <link rel="stylesheet" href="/swiper-bundle.min.css">
     <!-- Bootstrap -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
     <link
@@ -41,15 +43,15 @@
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav mx-auto mb-2 mb-lg-0 p-3">
+          <ul class="navbar-nav mx-auto mb-2 mb-lg-0 p-3 nav-underline">
             <li class="nav-item">
-              <a class="nav-link fw-bold fs-5" aria-current="page" href="#">Home</a>
+              <a class="nav-link  active fw-bold fs-5" aria-current="page" href="/index.htm">Home</a>
             </li>
             <li class="nav-item">
               <a class="nav-link fw-bold fs-5" href="/Software/software.html">Software</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link fw-bold fs-5" href="#">Usecases</a>
+              <a class="nav-link fw-bold fs-5" href="/Usecases/Usecases.html">Usecases</a>
             </li>
             <li class="nav-item dropdown fs-5">
               <a
@@ -84,69 +86,44 @@
     <!--Carousel -->
 <section class="phones-carousel">
   <div id="welcomeCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
-    <div class="carousel-indicators">
+    <!-- <div class="carousel-indicators">
         <button type="button" data-bs-target="#welcomeCarousel" data-bs-slide-to="0" class="active"
-            aria-current="true" aria-label="Welcome 1"></button>
+     vscode-file://vscode-app/c:/Users/Bediako%20K/AppData/Local/Programs/Microsoft%20VS%20Code/resources/app/out/vs/code/electron-sandbox/workbench/workbench.html       aria-current="true" aria-label="Welcome 1"></button>
         <button type="button" data-bs-target="#welcomeCarousel" data-bs-slide-to="1"
             aria-label="Welcome 2"></button>
         <button type="button" data-bs-target="#welcomeCarousel" data-bs-slide-to="2"
-            aria-label="Welcome 3"></button>
+            aria-label="Welcome 3"></button> -->
     </div>
     <div class="carousel-inner">
-        <div class="carousel-item welcome-carousel-image1 active">
-            <div class="carousel-caption text-start">
-                <h1>Environmental Monitoring Stations</h1>
-                <p>Real-Time high quality environment monitoring sensor.</p>
-                <div
-                class="button-box justify-content-center align-items-center  m-5 gap-4 mt-5"
-              >
-                <div class="">
-                  <button class="bt-carousel m-3 ">Explore Products</butfton>
-                </div>
-                <div class="">
-                  <button class="bt-carousel col-md-3 ">Get In Touch</button>
-                </div>
-              </div>
-            </div>
+      <div class="carouselBox-text ms-2 mt-4" >
+        <h2 class="CarouelText-header">Environmental 
+          Monitoring Stations</h2>
+          <p class="CarouelText-Pre">Real-Time high quality environmental
+            monitoring sensor</p>
+      </div>
+        <div class="carousel-item welcome-carousel-image1 active" style="height: 200px;">
+          
         </div>
-        <div class="carousel-item welcome-carousel-image2">
-            <div class="carousel-caption text-start">
-              <h1>Environmental Monitoring Stations</h1>
-              <p>Real-Time high quality environment monitoring sensor.</p>
-                
-            </div>
+        <div class="carousel-item welcome-carousel-image2"  style="height: 200px;"  >
+         
         </div>
-        <div class="carousel-item welcome-carousel-image3">
-            <div class="carousel-caption text-start">
-              <h1>Environmental Monitoring Stations</h1>
-              <p>Real-Time high quality environment monitoring sensor.</p>
-                <button type="button" class="btn btn-primary" id="liveToastBtn">SUBSCRIBE</button>
-                <div class="toast-container position-fixed bottom-0 end-0 p-3">
-                    <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
-                      <div class="toast-header">
-                        <img src="..." class="rounded me-2" alt="...">
-                        <strong class="me-auto">Bootstrap</strong>
-                        <small>11 mins ago</small>
-                        <!-- <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button> -->
-                      </div>
-                      <div class="toast-body">
-                        Hello, world! This is a toast message.
-                      </div>
-                    </div>
-                  </div> 
-                  
-                <!-- <p><a class="btn btn-lg btn-primary" id="liveToastBtn"   role="button" >SUBSCRIBE</a></p> -->
-            </div>
+        <div class="carousel-item welcome-carousel-image3"  style="height: 200px;">
+        
         </div>
+       
     </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#welcomeCarousel" data-bs-slide="prev">
+    <div class="button-box p-3 ">
+      <button class="bt-carousel gap-4">Explore Products</button>
+      <button class="bt-carousel mt-2">Get in touch</button>
+    </div>
+    <!-- <button class="carousel-control-prev" type="button" data-bs-target="#welcomeCarousel" data-bs-slide="prev">
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
         <span class="visually-hidden">Previous</span>
     </button>
     <button class="carousel-control-next" type="button" data-bs-target="#welcomeCarousel" data-bs-slide="next">
         <span class="carousel-control-next-icon" aria-hidden="true"></span>
         <span class="visually-hidden">Next</span>
-    </button>
+    </button> -->
 </div>
   
 </section>
@@ -280,9 +257,9 @@
     <!--Carousel End -->
 
     <!--About Klima Air -->
-    <section class="container mt-5 ">
-      <div class="row">
-        <div class="col-md-6 mt-5">
+    <section class="container    klima-container  ">
+      <div class="row mt-5">
+        <div class="col-lg-6 col-12 mt-5">
           <div class="text-box">
             <div class="about-headre">
               <p class="about-text">
@@ -306,13 +283,13 @@
                 with a Smart Pole/Intelligent Pole.
               </p>
             </div>
-            <div>
-              <button class="company-btn mt-3">Company Profile</button>
+            <div class="companyBtn_phone">
+              <a class="company-btn mt-3"  href="./CompanyProfile/CompanyProfile.html">Company Profile</a>
             </div>
           </div>
         </div>
-        <div class="col-md-6">
-          <div class="image-box mt-5">
+        <div class="col-lg-6 col-12">
+          <div class="image-box">
             <img src="./image/F_F CONCEPT 1.png" class="img-fluid" />
           </div>
         </div>
@@ -336,7 +313,7 @@
           </div>
           <div class="mt-5 card-content">
             <div class="row justify-content-center text-center">
-              <div class="col-md-4">
+              <div class="col-lg-4  col-md-6">
                 <div class="card text-center" style="width: 18rem">
                   <div class="card-body mt-4">
                     <div>
@@ -350,7 +327,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col-md-4">
+              <div class="col-lg-4  col-md-6">
                 <div class="card" style="width: 18rem">
                   <div class="card-body mt-4">
                     <div>
@@ -364,7 +341,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col-md-4">
+              <div class="col-lg-4  col-md-6">
                 <div class="card" style="width: 18rem">
                   <div class="card-body mt-4">
                     <div>
@@ -381,7 +358,7 @@
               </div>
             </div>
             <div class="row mt-4 text-center">
-              <div class="col-md-4">
+              <div class="col-lg-4 col-md-6">
                 <div class="card" style="width: 18rem">
                   <div class="card-body mt-4">
                     <div>
@@ -396,7 +373,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col-md-4">
+              <div class="col-lg-4  col-md-6">
                 <div class="card" style="width: 18rem">
                   <div class="card-body mt-4">
                     <div>
@@ -410,7 +387,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col-md-4">
+              <div class="col-lg-4  col-md-6">
                 <div class="card" style="width: 18rem">
                   <div class="card-body mt-4">
                     <div>
@@ -494,7 +471,7 @@
             </div>
           </div>
           <div class="btn-readMore mt-5 py-5">
-            <button class="more-btn">Read More</button>
+            <a class="more-btn"  href="./CompanyProfile/CompanyProfile.html">Read More</a>
           </div>
         </div>
       </div>
@@ -511,7 +488,7 @@
         alt=""
         style="height: 550px"
       /> -->
-      <div class=" text-center py-5 my-5">
+      <div class="  py-5 my-5 central-TextBox">
         <h5 class="card-title text-white fs-3">
           Do you have a specific requirement?
         </h5>
@@ -519,325 +496,99 @@
           Schedule a call with our expert team and get a customised
           <br />solutionfor your air quality monitoring requirement
         </p>
-        <button type="submit" class="btn btn-success pt-2">
+        <button type="submit" class="call-request pt-2">
           Request a Call
         </button>
       </div>
     </div>
 
     <!-- 1st SECTION -->
-    <section>
-      <div class="row justify-content-center m-5  pt-5 py-5 ">
-          <div class="section-title text-center">
-            <h2 class="fw-bold mb-5">Product <span class="">Usecases</span></h2>
-          </div>
-            <!-- Slider main container   -->
-            <div id="carouselExampleAutoplaying" class="carousel-dark slide d-none d-sm-block" data-bs-ride="carousel">  
-              <div class="carousel-inner">
-                <div class="carousel-item active">
-                 <div class="card-wrapper ">
-
-                  <div class="card-carousle me-3">
-                    <div class="image-Warpper">
-                      <img src="./image/Rectangle 11.png" class="card-img-top  img-fluid  mt-4  carousle-image alt="...">
-                    </div>
-                      <div class="caqrd-body ">
-                    
-                      <div class="my-3">
-                        <h5 class="card-title text-success ms-4">Mining Site</h5>
-                        <p class="text-carousel  ms-4 mt-2">
-                          Deforestation, water pollution, and habitat destruction
-                          at mining sites influence environmental authorities to
-                          monitor, analyze...
-                        </p>
-                      </div>
   
-                      </div>
-                    </div>
-      
-                 <div class="card-carousle me-3">
-                    <div class="image-Warpper">
-                      <img src="./image/Rectangle 13.png" class="card-img-top  img-fluid  mt-4  carousle-image alt="...">
-                    </div>
-                      <div class="caqrd-body ">
-                    
-                      <div class="my-3">
-                        <h5 class="card-title text-success ms-4">Mining Site</h5>
-                        <p class="text-carousel  ms-4 mt-2">
-                          Food processing activities contribute to climate change
-                        through greenhouse gas emissions. Adopting eco-friendly
-                        technologies and...
-
-                        </p>
-                      </div>
+    <section class="container-card  container">
+      <div class="card__container swiper">
+         <div class="card__content">
+            <div class="swiper-wrapper">
   
-                      </div>
-                    </div>
-      
-                    <div class="card-carousle me-2">
-                      <div class="image-Warpper">
-                        <img src="./image/Rectangle 15.png" class="card-img-top  img-fluid  mt-4  carousle-image alt="...">
-                      </div>
-                        <div class="caqrd-body ">
-                      
-                        <div class="my-3">
-                          <h5 class="card-title text-success ms-4">Mining Site</h5>
-                          <p class="text-carousel  ms-4 mt-2">
-                            Environmental pollution monitoring systems such as IOT
-                            sensors, and other smart technologies in cities provide
-                            city authorities...    
-                          </p>
-                        </div>
-    
-                        </div>
-                      </div>
-                 </div>
+               <article class="card__article swiper-slide">
+                  <div class="card__image">
+                     <img src="./image/Rectangle 11.png" alt="image" class="card__img img-s">
+                     <!-- <div class="card__shadow"></div> -->
+                  </div>
+   
+                  <div class="card__data mt-4 ms-4">
+                     <h3 class="card__name text-success">Mining Site</h3>
+                     <p class="card__description">
+                      Environmental pollution monitoring systems such as IOT
+                      sensors, and other smart technologies in cities provide
+                      city authorities...
+                     </p>
+                  </div>
+               </article>
+   
+               <article class="card__article swiper-slide">
+                <div class="card__image">
+                   <img src="./image/Rectangle 13.png" alt="image" class="card__img img-s">
+                   <!-- <div class="card__shadow"></div> -->
                 </div>
-                <div class="carousel-item">
-                  <div class="card-wrapper ">
-
-                    <div class="card-carousle me-3">
-                      <div class="image-Warpper">
-                        <img src="./image/Rectangle 11.png" class="card-img-top  img-fluid  mt-4  carousle-image alt="...">
-                      </div>
-                        <div class="caqrd-body ">
-                      
-                        <div class="my-3">
-                          <h5 class="card-title text-success ms-4">Mining Site</h5>
-                          <p class="text-carousel  ms-4 mt-2">
-                            Deforestation, water pollution, and habitat destruction
-                            at mining sites influence environmental authorities to
-                            monitor, analyze...
-                          </p>
-                        </div>
-    
-                        </div>
-                      </div>
-        
-                   <div class="card-carousle me-3">
-                      <div class="image-Warpper">
-                        <img src="./image/Rectangle 13.png" class="card-img-top  img-fluid  mt-4  carousle-image alt="...">
-                      </div>
-                        <div class="caqrd-body ">
-                      
-                        <div class="my-3">
-                          <h5 class="card-title text-success ms-4">Mining Site</h5>
-                          <p class="text-carousel  ms-4 mt-2">
-                            Food processing activities contribute to climate change
-                          through greenhouse gas emissions. Adopting eco-friendly
-                          technologies and...
   
-                          </p>
-                        </div>
-    
-                        </div>
-                      </div>
-        
-                      <div class="card-carousle me-2">
-                        <div class="image-Warpper">
-                          <img src="./image/Rectangle 15.png" class="card-img-top  img-fluid  mt-4  carousle-image alt="...">
-                        </div>
-                          <div class="caqrd-body ">
-                        
-                          <div class="my-3">
-                            <h5 class="card-title text-success ms-4">Mining Site</h5>
-                            <p class="text-carousel  ms-4 mt-2">
-                              Environmental pollution monitoring systems such as IOT
-                              sensors, and other smart technologies in cities provide
-                              city authorities...    
-                            </p>
-                          </div>
-      
-                          </div>
-                        </div>
-                   </div>
-                </div>
-                <div class="carousel-item">
-                  <div class="card-wrapper ">
-
-                    <div class="card-carousle me-3">
-                      <div class="image-Warpper">
-                        <img src="./image/Rectangle 11.png" class="card-img-top  img-fluid  mt-4  carousle-image alt="...">
-                      </div>
-                        <div class="caqrd-body ">
-                      
-                        <div class="my-3">
-                          <h5 class="card-title text-success ms-4">Mining Site</h5>
-                          <p class="text-carousel  ms-4 mt-2">
-                            Deforestation, water pollution, and habitat destruction
-                            at mining sites influence environmental authorities to
-                            monitor, analyze...
-                          </p>
-                        </div>
-    
-                        </div>
-                      </div>
-        
-                   <div class="card-carousle me-3">
-                      <div class="image-Warpper">
-                        <img src="./image/Rectangle 13.png" class="card-img-top  img-fluid  mt-4  carousle-image alt="...">
-                      </div>
-                        <div class="caqrd-body ">
-                      
-                        <div class="my-3">
-                          <h5 class="card-title text-success ms-4">Mining Site</h5>
-                          <p class="text-carousel  ms-4 mt-2">
-                            Food processing activities contribute to climate change
-                          through greenhouse gas emissions. Adopting eco-friendly
-                          technologies and...
-  
-                          </p>
-                        </div>
-    
-                        </div>
-                      </div>
-        
-                      <div class="card-carousle me-2">
-                        <div class="image-Warpper">
-                          <img src="./image/Rectangle 15.png" class="card-img-top  img-fluid  mt-4  carousle-image alt="...">
-                        </div>
-                          <div class="caqrd-body ">
-                        
-                          <div class="my-3">
-                            <h5 class="card-title text-success ms-4">Mining Site</h5>
-                            <p class="text-carousel  ms-4 mt-2">
-                              Environmental pollution monitoring systems such as IOT
-                              sensors, and other smart technologies in cities provide
-                              city authorities...    
-                            </p>
-                          </div>
-      
-                          </div>
-                        </div>
-                   </div>
-                </div>
-              </div>
-              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-              </button>
-              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-              </button>
-            </div>
-
-          
-             <!-- Phone Carousel -->
-      <div id="carouselExample" class="carousel-dark slide  d-sm-none" data-bs-ride="carousel">
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <div class="card-carousle">
-              <div class="image-Warpper">
-                <img src="./image/Rectangle 11.png" class="card-img-top  img-fluid  mt-4  carousle-image alt="...">
-              </div>
-                <div class="caqrd-body ">
-              
-                <div class="my-3">
-                  <h5 class="card-title text-success ms-4">Mining Site</h5>
-                  <p class="text-carousel  ms-4 mt-2">
-                    Deforestation, water pollution, and habitat destruction
-                    at mining sites influence environmental authorities to
-                    monitor, analyze...
-                  </p>
-                </div>
-
-                </div>
-              </div>
-          </div>
-          <div class="carousel-item">
-            <div class="card-carousle ">
-              <div class="image-Warpper">
-                <img src="./image/Rectangle 13.png" class="card-img-top  img-fluid  mt-4  carousle-image alt="...">
-              </div>
-                <div class="caqrd-body ">
-              
-                <div class="my-3">
-                  <h5 class="card-title text-success ms-4">Mining Site</h5>
-                  <p class="text-carousel  ms-4 mt-2">
+                <div class="card__data mt-4 ms-4">
+                   <h3 class="card__name  text-success">Food Processing</h3>
+                   <p class="card__description">
                     Food processing activities contribute to climate change
                   through greenhouse gas emissions. Adopting eco-friendly
                   technologies and...
-
-                  </p>
+                   </p>
                 </div>
-
-                </div>
+             </article>
+   
+             <article class="card__article swiper-slide">
+              <div class="card__image">
+                 <img src="./image/Rectangle 15.png" alt="image" class="card__img img-s">
+                 <!-- <div class="card__shadow"></div> -->
               </div>
-          </div>
-       
-            
-          <div class="carousel-item">
-            <div class="card-carousle ">
-              <div class="image-Warpper">
-                <img src="./image/Rectangle 15.png" class="card-img-top  img-fluid  mt-4  carousle-image alt="...">
+  
+              <div class="card__data mt-4 ms-4">
+                 <h3 class="card__name text-success">Smart City</h3>
+                 <p class="card__description">
+                  Environmental pollution monitoring systems such as IOT
+                      sensors, and other smart technologies in cities provide
+                      city authorities... 
+                 </p>
               </div>
-                <div class="caqrd-body ">
-              
-                <div class="my-3">
-                  <h5 class="card-title text-success ms-4">Mining Site</h5>
-                  <p class="text-carousel  ms-4 mt-2">
-                    Environmental pollution monitoring systems such as IOT
-                    sensors, and other smart technologies in cities provide
-                    city authorities...    
-                  </p>
-                </div>
-
-                </div>
-              </div>
-          </div>
-          <div class="carousel-item">
-            <div class="card-carousle ">
-              <div class="image-Warpper">
-                <img src="./image/Rectangle 15.png" class="card-img-top  img-fluid  mt-4  carousle-image alt="...">
-              </div>
-                <div class="caqrd-body ">
-              
-                <div class="my-3">
-                  <h5 class="card-title text-success ms-4">Mining Site</h5>
-                  <p class="text-carousel  ms-4 mt-2">
-                    Environmental pollution monitoring systems such as IOT
-                    sensors, and other smart technologies in cities provide
-                    city authorities...    
-                  </p>
-                </div>
-
-                </div>
-              </div>    
-          </div>
-          <div class="carousel-item">
-            <div class="card-carousle ">
-              <div class="image-Warpper">
-                <img src="./image/Rectangle 15.png" class="card-img-top  img-fluid  mt-4  carousle-image alt="...">
-              </div>
-                <div class="caqrd-body ">
-              
-                <div class="my-3">
-                  <h5 class="card-title text-success ms-4">Mining Site</h5>
-                  <p class="text-carousel  ms-4 mt-2">
-                    Environmental pollution monitoring systems such as IOT
-                    sensors, and other smart technologies in cities provide
-                    city authorities...    
-                  </p>
-                </div>
-
-                </div>
-              </div>
-          </div>
-          
-       
-        <button class="carousel-control-prev " type="button" data-bs-target="#carouselExampleControlsSmallScreen" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControlsSmallScreen" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
+           </article>
+  
+           <article class="card__article swiper-slide">
+            <div class="card__image">
+               <img src="./image/Rectangle 11.png" alt="image" class="card__img img-s">
+               <!-- <div class="card__shadow"></div> -->
+            </div>
+  
+            <div class="card__data mt-4 ms-4">
+               <h3 class="card__name">Mining Site </h3>
+               <p class="card__description text-success ">
+                Environmental pollution monitoring systems such as IOT
+                sensors, and other smart technologies in cities provide
+                city authorities...
+               </p>
+            </div>
+         </article>
+  
+            </div>
+         </div>
+  
+         <!-- Navigation buttons -->
+         <div class="swiper-button-next">
+            <i class="ri-arrow-right-s-line"></i>
+         </div>
+         
+         <div class="swiper-button-prev">
+            <i class="ri-arrow-left-s-line"></i>
+         </div>
+  
+         <!-- Pagination -->
+         <!-- <div class="swiper-pagination mt-5"></div> -->
       </div>
-      <!-- Phone Carousel End-->
-      </div>
-    </section>
+   </section>
 
     <!-- END OF SECTION -->
 
@@ -852,7 +603,7 @@
             </h2>
           </div>
           <div class="container py-5">
-            <div class="row  justify-content-center">
+            <div class="row  justify-content-center gap-md-5">
               <div class="col-md-2 col-12">
                 <div class="card-client text-center" style="width: 18rem">
                   <div class="card-body mt-1">
@@ -905,7 +656,7 @@
               </div>
             </div>
 
-            <div class="row justify-content-center py-5">
+            <div class="row justify-content-center py-5 gap-md-5">
               <div class="col-md-2 col-12">
                 <div class="card-client text-center" style="width: 18rem">
                   <div class="card-body mt-4">
@@ -942,15 +693,7 @@
       </div>
     </section>
 
-    <!-- <section>
-  <div class="row justify-content-center pt-5">
-    <div class="col-lg-8">
-        <div class="section-title text-center">
-          <h2 class="fw-bold mb-5">Our <span class="text-success">Clients & Partners</span></h2>
-        </div>
-    </div>
-  </div>
-</section> -->
+  
 
     <section class="contacts updata-box">
       <div class="container-lg py-5">
@@ -961,14 +704,14 @@
         </div>
 
         <div class="row">
-          <div class="col-md-6 mt-5">
+          <div class="col-lg-6 col-12 mt-5">
             <div class="contact-item d-flex mb-3">
-              <h1 class="updated-text">
+              <h1 class="updated-text ms-md-3">
                 Stay updated on air quality <br> monitoring
                 <span class="">news & updates</span>
               </h1>
             </div>
-            <p class="sign-up">
+            <p class="sign-up  ms-md-3">
               Sign up for our newsletter to stay updated with industry news, air
               quality monitoring trends, new product releases, and company
               updates.
@@ -1001,7 +744,7 @@
             </div>
           </div>
 
-          <div class="col-md-4">
+          <div class="col-lg-4 col-12 mt-md-5">
             <div class="contact-img">
               <img src="./image/Rectangle 26.png" class="img-responsive " alt="" />
             </div>
@@ -1147,35 +890,14 @@
 
 
 
-    <!-- <script src="index.js"></script> -->
+    <script src="./js/swiper-bundle.min.js"></script>
+
+    <script src="./js/main.js"></script>
+
+
     <!-- Bootstrap javascript link-->
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <script>
-      const swiper = new Swiper(".swiper", {
-        // Optional parameters
-        direction: "horizontal",
-        loop: true,
-        slidesPerView: 3, // Number of slides per view
-        spaceBetween: 6, // Space between slides
-        autoplay: true,
-
-        // If we need pagination
-        pagination: {
-          el: ".swiper-pagination",
-        },
-
-        // Navigation arrows
-        navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
-        },
-
-        // And if we need scrollbar
-        // scrollbar: {
-        //   el: '.swiper-scrollbar',
-        // },
-      });
-    </script
+  
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
       integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
