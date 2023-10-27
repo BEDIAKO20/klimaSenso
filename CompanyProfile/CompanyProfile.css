@@ -324,3 +324,9 @@ line-height: normal;
 .thinks-box{
   padding-top: 10%;
 }
+a{
+  text-decoration: none !important;
+}
+.footerDown-box{
+  background-color: #DEDEDE;
+}
