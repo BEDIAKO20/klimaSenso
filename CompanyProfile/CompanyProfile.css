@@ -57,18 +57,13 @@ font-weight: 600;
 line-height: 100.5%; /* 84.42px */
   }
 
-  .klima-text{
-    width: 798px;
-    color: #000;
-    font-family: "Poppins", sans-serif;
-  font-size: 17px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: normal;
-  }
-  img{
+  /* img{
     margin-left: 34% !important ;
   
+  } */
+
+  .dataimage-box{
+    margin-left: 34% !important ;
   }
 
   .klima-container{
@@ -93,16 +88,7 @@ margin-top: 10%;
   .data-image{
     margin-right: 23%;
   }
-  .data-pre{
-    width: 980px;
-    color: #000;
-text-align: center;
-font-size: 19px;
-font-style: normal;
-font-weight: 400;
-line-height: normal;
-margin-left: 15%;
-  }
+
   .insrallation-process{
     color: #000;
     font-size: 45px;
@@ -111,124 +97,35 @@ margin-left: 15%;
     line-height: normal;
   }
 
-  .easy-text{
-    color: #000;
-font-size: 24px;
-font-style: normal;
-font-weight: 500;
-line-height: normal;
-
-  }
-
-  .airklima-text{
-    /* width: 100%; */
-    width: 950px;
-    color: #000;
-    /* text-align: center; */
-font-size: 17px;
-font-style: normal;
-font-weight: 500;
-line-height: normal;
-margin-left: 15%;
-  }
+ 
 
 
 
-  .klima-imge1{
-    background-image: url(/image/image-32-x.png) !important;
-    width: 130%;  
-    height: 231px !important;
-    flex-shrink: 0;
-    /* width: 130%; */
-    /* height: % !important; */
-     background-position: center;
-background-repeat: no-repeat;
-background-size: cover;
-height: 271px;
-border: 2px solid  lightgray ;
-border-radius:  10px;
-  }
+ 
   .klima-imge1:hover{
     border: 3px solid #039D3F;
   }
-  .klima-imge2{
-    background-image: url(/image/image-4.png) !important;
-    width: 130%;  
-    height: 231px !important;
-    flex-shrink: 0;
-    /* width: 130%; */
-    /* height: % !important; */
-     background-position: center;
-background-repeat: no-repeat;
-background-size: cover;
-height: 271px;
-border: 2px solid  lightgray ;
-border-radius:  10px;
-  }
+ 
 
   .klima-imge2:hover{
     border: 3px solid #039D3F;
 
   }
-  .klima-imge3{
-    background-image: url(/image/image-5.png) !important;
-    width: 130%;  
-    height: 231px !important;
-    flex-shrink: 0;
-    /* width: 130%; */
-    /* height: % !important; */
-     background-position: center;
-background-repeat: no-repeat;
-background-size: cover;
-height: 271px;
-border: 2px solid  lightgray ;
-border-radius:  10px;
-  }
+  
   .klima-imge3:hover{
     border: 3px solid #039D3F;
   }
-  .klima-imge4{
-    background-image: url(/image/image-6.png) !important;
-    width: 130%;  
-    height: 231px !important;
-    flex-shrink: 0;
-    /* width: 130%; */
-    /* height: % !important; */
-     background-position: center;
-background-repeat: no-repeat;
-background-size: cover;
-height: 271px;
-border: 2px solid  lightgray ;
-border-radius:  10px;
-  }
+
   .klima-imge4:hover{
     border: 3px solid #039D3F;
   }
 
-  .klima-imge5{
-    background-image: url(/image/image-7.png) !important;
-    width: 130%;  
-    height: 231px !important;
-    flex-shrink: 0;
-    /* width: 130%; */
-    /* height: % !important; */
-     background-position: center;
-background-repeat: no-repeat;
-background-size: cover;
-height: 271px;
-border: 2px solid  lightgray ;
-border-radius:  10px;
-  }
+ 
   .klima-imge5:hover{
     border: 3px solid #039D3F;
   }
 
-  .klimaText-Box{
-    display: none;
-    background: rgba(3, 157, 63, 0.90);
-    margin-top: 27% ;
-    border-radius:  8px;  
-  }
+
 
   .klimaText-Box:hover{
     display: block;
@@ -266,6 +163,7 @@ border-style: dashed !important ;
   /* margin-right: 50% !important; */
   position: relative;
 right: 27%;
+margin-left: 34% !important ;
 }
 
 .box-image:hover{
@@ -275,10 +173,7 @@ right: 27%;
 .box-image{
   transition: transform 100ms ease-in-out;
 }
-.card-box{
-  border-radius: 24px;
-  border: 1px solid #DEDEDE;
-}
+
 
 .box-text{
   color: #000;
@@ -313,20 +208,292 @@ font-weight: 400;
   background: #039D3F;
   color: #F6F6F6;
 }
-.think-text{
-  color: #000;
 
-font-size: 46px;
-font-style: normal;
-font-weight: 500;
-line-height: normal;
-}
-.thinks-box{
-  padding-top: 10%;
-}
+
 a{
   text-decoration: none !important;
 }
 .footerDown-box{
   background-color: #DEDEDE;
 }
+
+
+/*=============== BREAKPOINTS ===============*/
+/* Laptop-Screen */
+@media only screen and (min-width: 768px) and (max-width: 1920px) {
+
+  .klima-text{
+    width: 798px;
+    color: #000;
+    font-family: "Poppins", sans-serif;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  }
+  .concept-image{
+    margin-left: 34% !important ;
+  }
+  .data-pre{
+    width: 980px;
+    color: #000;
+text-align: center;
+font-size: 19px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+margin-left: 15%;
+  }
+  .Data-BoxText{
+    text-align: center;
+  }
+  .easy-text{
+    color: #000;
+font-size: 24px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+
+  }
+
+  .airklima-text{
+    /* width: 100%; */
+    width: 950px;
+    color: #000;
+    /* text-align: center; */
+font-size: 17px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+margin-left: 15%;
+  }
+  .processing-Data {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+  .klima-imge1{
+    background-image: url(/image/image-32-x.png) !important;
+    width: 130%;  
+    height: 231px !important;
+    flex-shrink: 0;
+    /* width: 130%; */
+    /* height: % !important; */
+     background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+height: 271px;
+border: 2px solid  lightgray ;
+border-radius:  10px;
+  }
+  .klima-imge2{
+    background-image: url(/image/image-4.png) !important;
+    width: 130%;  
+    height: 231px !important;
+    flex-shrink: 0;
+    /* width: 130%; */
+    /* height: % !important; */
+     background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+height: 271px;
+border: 2px solid  lightgray ;
+border-radius:  10px;
+  }
+  .klima-imge3{
+    background-image: url(/image/image-5.png) !important;
+    width: 130%;  
+    height: 231px !important;
+    flex-shrink: 0;
+    /* width: 130%; */
+    /* height: % !important; */
+     background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+height: 271px;
+border: 2px solid  lightgray ;
+border-radius:  10px;
+  }
+  .klima-imge4{
+    background-image: url(/image/image-6.png) !important;
+    width: 130%;  
+    height: 231px !important;
+    flex-shrink: 0;
+    /* width: 130%; */
+    /* height: % !important; */
+     background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+height: 271px;
+border: 2px solid  lightgray ;
+border-radius:  10px;
+  }
+  .klima-imge5{
+    background-image: url(/image/image-7.png) !important;
+    width: 130%;  
+    height: 231px !important;
+    flex-shrink: 0;
+     background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+height: 271px;
+border: 2px solid  lightgray ;
+border-radius:  10px;
+  }
+  .klima-imageBox{
+    margin-left: 1% ;
+  }
+  .klimaText-Box{
+    display: none;
+    background: rgba(3, 157, 63, 0.90);
+    margin-top: 27% ;
+    border-radius:  8px;  
+  }
+  .card-box{
+    border-radius: 24px;
+    border: 1px solid #DEDEDE;
+  }
+  .thinkText-Box{
+    text-align: center;
+  }
+  .think-text{
+    color: #000;
+  
+  font-size: 46px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  }
+  .thinks-box{
+    padding-top: 10%;
+  }
+}
+
+/* Laptop-Screen End's */
+
+
+/* Mobile-Screen  */
+@media (min-width:320px) and (max-width:480px){
+
+  .klima-text{
+
+    color: #000;
+    font-family: "Poppins", sans-serif;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  }
+
+  .easy-text{
+    color: #000;
+font-size: 24px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+text-align: center;
+  }
+  .klima-imge1{
+    background-image: url(/image/image-32-x.png) !important;
+    width: 120%;  
+    height: 231px !important;
+    flex-shrink: 0;
+    /* width: 130%; */
+    /* height: % !important; */
+     background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+height: 271px;
+border: 2px solid  lightgray ;
+border-radius:  10px;
+margin-left: 1%;
+  }
+  .klima-imge2{
+    background-image: url(/image/image-4.png) !important;
+    width: 120%;  
+    height: 231px !important;
+    flex-shrink: 0;
+   /* width: 130%; */
+    /* height: % !important; */
+     background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+height: 271px;
+border: 2px solid  lightgray ;
+border-radius:  10px;
+margin-right: 1% !important;
+  }
+  .klima-imge3{
+    background-image: url(/image/image-5.png) !important;
+    width: 120%;  
+    height: 231px !important;
+    flex-shrink: 0;
+    /* width: 130%; */
+    /* height: % !important; */
+     background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+height: 271px;
+border: 2px solid  lightgray ;
+border-radius:  10px;
+position: relative;
+right: 7%;
+
+
+  }
+  .klima-imge4{
+    background-image: url(/image/image-6.png) !important;
+    width: 120%;  
+    height: 231px !important;
+    flex-shrink: 0;
+    /* width: 130%; */
+    /* height: % !important; */
+     background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+height: 271px;
+border: 2px solid  lightgray ;
+border-radius:  10px;
+position: relative;
+right: 18% !important;
+  }
+
+  .klima-imge5{
+    background-image: url(/image/image-7.png) !important;
+    width: 120%;  
+    height: 231px !important;
+    flex-shrink: 0;
+     background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+height: 271px;
+border: 2px solid  lightgray ;
+border-radius:  10px;
+position: relative;
+right: 36% !important;
+  }
+  .klimaText-Box{
+    display: none;
+    background: rgba(3, 157, 63, 0.90);
+    margin-top: 22% ;
+    border-radius:  8px;  
+  }
+
+  .card-box{
+    border-radius: 24px;
+    border: 1px solid #DEDEDE;
+    margin: 2%;
+  }
+  .think-text{
+    color: #000;
+  
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  }
+  .thinks-box{
+    padding-top: 20%;
+  }
+}
+/* Mobile-Screen End's  */
