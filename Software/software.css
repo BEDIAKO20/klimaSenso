@@ -105,6 +105,9 @@ body {
   height: 822px;
   flex-shrink: 0;
   }
+  .icon-box{
+    margin-left: 18% !important;
+  }
 }
 /* Mobile-Screen end  */
 

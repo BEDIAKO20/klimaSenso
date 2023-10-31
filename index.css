@@ -454,6 +454,9 @@ justify-content: center;
   left: 0;
   display: none !important;
 }
+.icon-box{
+  margin-left: 18% !important;
+}
   }
   /* Mobile-Screen End */
 
